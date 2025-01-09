@@ -1,0 +1,166 @@
+/* General styles */
+body {
+    font-family: 'Baloo Bhai 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+a {
+    color: #0077cc;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0.5em 0 1em;
+    font-size: 1.1em;
+    color: rgb(219, 219, 219);
+    font-style: italic;
+    
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1.5em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: orange;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Profile Photo */
+#profile-photo img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+}
+
+/* Skills */
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    margin: 5px 0;
+}
+
+/* Projects */
+#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+#projects ul li {
+    margin: 5px 0;
+}
+
+#projects ul li a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+#projects ul li a:hover {
+    text-decoration: underline;
+}
+
+#contact ul li {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#location {
+    color: rgb(63, 63, 63);
+}
+
+#phone:hover{
+    color: orange;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 0.5em 0;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .pdf-viewer {
+        height: 400px;
+    }
+}
